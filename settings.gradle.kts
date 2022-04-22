@@ -1,4 +1,4 @@
-rootProject.name = "ComposeBenchmarks"
+rootProject.name = "ComposeReproduceException"
 
 pluginManagement {
     plugins {
