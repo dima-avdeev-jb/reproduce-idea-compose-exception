@@ -33,17 +33,21 @@ class LifecycleListener : com.intellij.ide.AppLifecycleListener {
             invokeLater {
                 val tempDir = Files.createTempDirectory("idea_project")
                 tempProject = ProjectUtil.openOrImport(tempDir)
-                val toolWindowManager = ToolWindowManager.getInstance(tempProject)
-                for (anchor in ANCHORS) {
-                    for (sideTool in SIDE_TOOLS) {
+            }
+
+            while (true) {
+                delay(200)
+                try {
+                    invokeLater {
                         val id = "Compose${toolWindowIds.size}"
                         toolWindowIds.add(id)
-                        val toolWindow: ToolWindow = toolWindowManager.registerToolWindow(
+                        val toolWindowManager = ToolWindowManager.getInstance(tempProject)
+                        toolWindowManager.registerToolWindow(
                             RegisterToolWindowTask(
                                 id = id,
-                                anchor = anchor,
+                                anchor = ANCHORS.random(),
                                 component = null,
-                                sideTool = sideTool,
+                                sideTool = SIDE_TOOLS.random(),
                                 canCloseContent = true,
                                 canWorkInDumbMode = true,
                                 icon = null,
@@ -52,11 +56,7 @@ class LifecycleListener : com.intellij.ide.AppLifecycleListener {
                             )
                         )
                     }
-                }
-            }
-            while (true) {
-                try {
-                    delay(500)
+                    delay(200)
                     val toolWindowManager = ToolWindowManager.getInstance(tempProject)
                     val toolWindows = toolWindowIds.mapNotNull {
                         toolWindowManager.getToolWindow(it)
