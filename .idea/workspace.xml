@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="192265ad-5f9c-4944-b1b8-eecb38a65069" name="Changes" comment="reproduce">
-      <change afterPath="$PROJECT_DIR$/.run/reproduce-idea-compose-exception [runIde].run.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/jetbrains/compose/Helper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +92,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1650621513100</updated>
-      <workItem from="1650621514278" duration="9828000" />
+      <workItem from="1650621514278" duration="10134000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1650621611441</created>
@@ -121,7 +115,21 @@
       <option name="project" value="LOCAL" />
       <updated>1650628454670</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="reproduce">
+      <created>1650645459118</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1650645459118</updated>
+    </task>
+    <task id="LOCAL-00005" summary="reproduce">
+      <created>1650645670507</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1650645670507</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
